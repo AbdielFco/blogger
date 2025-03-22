@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "name": "ADMIN",
+        "password": "1234",
+        "email": "admin@gmail.com",
+        "avatar": "images/avatar1.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Abdiel Perez",
+        "password": "hashed_password",
+        "email": "abdiel@gmail.com",
+        "avatar": "images/avatar1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jose Martinez",
+        "password": "hashed_password",
+        "email": "jose@hotmail.com",
+        "avatar": "images/avatar2.jpg"
+    }
+]
