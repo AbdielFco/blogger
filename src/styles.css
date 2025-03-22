@@ -1,0 +1,131 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background: whitesmoke;
+    height: 100vh; /* Altura de la ventana del navegador */
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+    height: 100%; /* Ocupa toda la altura del body */
+}
+
+/* Utilidades Generales */
+.bold {
+    font-weight: bold;
+}
+.pointer {
+    cursor: pointer;
+}
+.rounded {
+    border-radius: 5px;
+}
+
+/* Links */
+.link {
+    color: rgb(10, 127, 255);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+    margin-left: 5px;
+}
+.link:hover {
+    color: rgb(0, 92, 184);
+    cursor: pointer;
+}
+
+.action-button {
+    background: none; /* Elimina el fondo */
+    border: none; /* Elimina el borde */
+    padding: 0; /* Elimina el padding */
+    font-size: 1.3rem; /* Tamaño de los íconos */
+    cursor: pointer;
+    color: #333; /* Color de los íconos */
+    transition: color 0.3s ease; /* Transición de color al hacer hover */
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    height: 2rem;
+    padding: 8px;
+    border: 1px solid rgba(197, 197, 197, 0.712);
+    background-color: rgba(240, 241, 241, 0.822);
+    color: rgb(41, 41, 41);
+    border-radius: 5px;
+}
+.textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(197, 197, 197, 0.712);
+    background-color: rgba(240, 241, 241, 0.822);
+    color: rgb(41, 41, 41);
+    border-radius: 5px;
+    resize: none; /* Desactiva la capacidad de redimensionar */
+}
+
+/* Botones */
+.btn {
+    /* width: 100%; */
+    height: 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.primary-btn {
+    background-color: rgb(0, 122, 255);
+    border: 1px solid rgb(0, 122, 255);
+    color: white;
+}
+.primary-btn:hover {
+    background-color: rgb(0, 142, 255);
+}
+
+.secondary-btn {
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(51, 51, 51);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.secondary-btn:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.card-label {
+    margin-right: 15px;
+}
+.card-button {
+    margin-right: 5px;
+}
+
+/* Separadores */
+.sep {
+    border: none;
+    height: 2px;
+    background-color: rgba(216, 213, 213, 0.623);
+    margin: 20px 0;
+}
+
+/* Tipografía */
+.f-1 { font-size: calc(1.2rem + 0.75vw); }
+.f-2 { font-size: calc(1.5rem + 3vw); }
+.f-3 { font-size: 2rem; }
+.f-4 { font-size: 1.75rem; }
+.f-5 { font-size: calc(0.5rem + 0.375vw); }
+.f-6 { font-size: 0.75rem; }
+.f-P { font-size: 1.125rem; }

@@ -1,0 +1,52 @@
+/* welcome.component.css */
+
+/* Establece la imagen de fondo */
+.background {
+    background-image: url('/images/fondos/bg.jpg'); /* Ruta absoluta desde la carpeta public */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza el contenedor cuadrado */
+.welcome-container {
+    width: 700px; /* Ancho del contenedor */
+    height: 150px; /* Alto del contenedor */
+    background-color: #2f2e2e; /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estiliza el texto de bienvenida */
+.welcome-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #7f7f7f;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        border-radius: 0px;
+    }
+    .background {
+        height: 55vh;
+    }
+    .welcome-text {
+        font-size: 18px;
+    }
+}

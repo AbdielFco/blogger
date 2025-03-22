@@ -1,0 +1,263 @@
+[
+    {
+        "id": 1739316258,
+        "title": "The Animal Kingdom",
+        "date": "2025-02-11T19:24:18-04:00",
+        "description": "Learn about the animal kingdom in this amazing informative post.",
+        "content": "This is a test content for this blog where we will see this for this blog, you can comment and give your opinion without any issues, this is a test text. What do you think?",
+        "image": "images/portadas/elefantes.jpg",
+        "author": {
+            "id": 1,
+            "email": "abdiel@gmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            },
+            {
+                "id": 1739473568816,
+                "author": {
+                    "id": 2,
+                    "email": "jose@hotmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "comments": [
+            {
+                "id": 1739473568816,
+                "author": {
+                    "id": 2,
+                    "email": "jose@hotmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00",
+                "content": "I loved the post!"
+            },
+            {
+                "id": 1739473568818,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00",
+                "content": "Me too!"
+            }
+        ]
+    },
+    {
+        "id": 1739143458,
+        "title": "The Jungle",
+        "date": "2025-03-10T18:00:02",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/tigre.jpg",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                }
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": 1738970658,
+        "title": "The Parakeet",
+        "date": "2025-02-07T19:24:18-04:00",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/perico.jpg",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                }
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": 1738884258,
+        "title": "Butterflies",
+        "date": "2025-02-06T19:24:18-04:00",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/mariposa.jpg",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            },
+            {
+                "id": 1739473568816,
+                "author": {
+                    "id": 2,
+                    "email": "jose@hotmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": 1739057058,
+        "title": "The Most Impactful Tech Leader",
+        "date": "2025-02-08T19:24:18-04:00",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/stevejobs.jpg",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                }
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": 1739489058,
+        "title": "A Big Change",
+        "date": "2025-02-13T19:24:18-04:00",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/procesadores.webp",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                }
+            }
+        ],
+        "comments": []
+    },
+    {
+        "id": 1738538658,
+        "title": "The AI Revolution",
+        "date": "2025-02-02T19:24:18-04:00",
+        "description": "We explore the incredible diversity of the jungle.",
+        "content": "",
+        "image": "images/portadas/ia.jpg",
+        "author": {
+            "id": 2,
+            "email": "jose@hotmail.com"
+        },
+        "views": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                },
+                "date": "2025-02-11T19:24:18-04:00"
+            }
+        ],
+        "likes": [
+            {
+                "id": 1739473553995,
+                "author": {
+                    "id": 1,
+                    "email": "abdiel@gmail.com"
+                }
+            }
+        ],
+        "comments": []
+    }
+]

@@ -1,0 +1,102 @@
+nav {
+    background-color: #2f2e2e;
+    padding: 1.5px;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    max-width: 1100px;
+    padding: 1.5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    width: 110px;
+    float: left;
+    border-right: 1px solid #575656a8;
+    font-size: 18px;
+}
+
+li a,
+button {
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+a {
+    color: #7f7f7f;
+}
+
+/* Hover para los enlaces */
+li a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* Clase para el enlace activo */
+.active {
+    color: white;
+}
+
+/* Contenedor del botón hamburguesa */
+.menu {
+    display: none;
+    float: right;
+    justify-content: right;
+    align-items: right;
+}
+
+/* Botón hamburguesa */
+.hamburguer {
+    background: none;
+    border: none;
+    font-size: 34px; /* Tamaño del icono */
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+    }
+    li {
+        width: 100%;
+    }
+    /* Se muestra el botón hamburguesa y se ubica en la parte superior */
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        order: -1; /* Ubica el botón primero */
+    }
+    /* Oculta las opciones de menú (excepto el botón) por defecto */
+    ul:not(.open) li:not(.menu) {
+        display: none;
+    }
+    /* Cuando se abre el menú (se añade la clase "open"), se muestran las opciones debajo */
+    ul.open li:not(.menu) {
+        display: block;
+    }
+}

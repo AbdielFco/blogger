@@ -1,0 +1,13 @@
+<nav>
+    <div class="nav-container">
+        <ul [class.open]="menuOpen">
+            <li><a class="pointer" (click)="goHome()" [class.active]="activeRoute === '/home'">Home</a></li>
+            <li><a class="pointer" (click)="goBlog()" [class.active]="activeRoute === '/blog'">Blog</a></li>
+            <li class="menu">
+                <button class="hamburguer" (click)="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>

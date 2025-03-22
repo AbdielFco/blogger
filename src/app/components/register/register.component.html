@@ -1,0 +1,39 @@
+<div class="centered-container">
+    <app-spinner *ngIf="isLoading"></app-spinner>
+    <div class="container rounded">
+        <div class="left rounded">
+            <img [src]="images.bgLogin" alt="Background" class="bg rounded">
+        </div>
+        <div class="right rounded">
+            <div class="logo-container">
+                <img [src]="images.angularIcon" alt="Angular Logo" class="icon">
+                <span class="f-1">Bloggy</span>
+            </div>
+            <h3 class="f-p welcome">Create your account!</h3>
+
+            <form (ngSubmit)="register()" class="form-container f-5">
+                <label>Name</label>
+                <input id="name" [(ngModel)]="sesion.name" name="name" type="text" class="input rounded" placeholder="Enter full name" required>
+                <label>Email</label>
+                <input id="email" [(ngModel)]="sesion.email" name="email" type="text" class="input rounded" placeholder="Enter email" required>
+                <label>Password</label>
+                <input id="password" [(ngModel)]="sesion.password" name="password" type="password" class="input rounded" placeholder="Enter password" required>
+
+                <div class="options"></div>
+
+                <button class="f-p btn primary-btn">Next ></button> 
+                <hr class="sep">
+            </form>
+
+            <!-- <button class="f-p btn secondary-btn">
+                <img [src]="images.googleIcon" alt="Google Icon" class="icon-google">
+                <span>Or Sign up with Google</span>
+            </button> -->
+            
+            <div class="f-5 register-container">
+                <span>Do you have an account?</span>
+                <a (click)="onLoginAccount()" class="link">Sign in now</a>
+            </div>
+        </div>
+    </div>
+</div>

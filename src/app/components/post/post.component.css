@@ -1,0 +1,115 @@
+/* .pcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); /* Ajusta las columnas automáticamente */
+/*    gap: 10px; /* Espacio entre las cards */ 
+/*    padding: 16px;
+/*    justify-content: center; /* Centra las cards horizontalmente */
+/*    place-items: center; /* Centra cada card */
+/*} */ 
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden en filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 10px; /* Espaciado entre tarjetas */
+    padding: 16px;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between; /* Separar izquierda y derecha */
+    align-items: center; /* Centrar los botones verticalmente */
+}
+.left-action {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre los botones */
+}
+.right-action {
+    display: flex;
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.card-button:hover {
+    color: #007BFF; /* Color de los íconos al pasar el ratón */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos de arriba hacia abajo */
+    justify-content: space-between;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 70vw;
+    /* height: 90vh; */
+    margin: 15px 5px 15px 5px;
+}
+
+.content-container {
+    padding: 16px;
+    padding-top: 3px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 3px;
+    font-style: italic;
+}
+
+.card-items {
+    list-style: none;
+    padding: 0;
+}
+
+.card-items li {
+    /* background: #f3f3f3; */
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius: 4px;
+    height: auto;
+    color: #313131;
+}
+
+.bg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(216, 213, 213, 0.623);
+    margin: 10px 0;
+}
+
+.interaction-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px 10px auto;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    /* .card-container {
+    } */
+}
+
+

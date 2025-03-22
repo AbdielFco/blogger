@@ -1,0 +1,61 @@
+
+<div class="bubble-container">
+    <a (click)="openModal2(); onButtonClick()" class="bubble user-bubble">
+        <i class="fa-regular fa-user"></i>
+    </a>
+    <a (click)="openModal()" class="bubble post-bubble">
+        <i class="fas fa-plus"></i>
+    </a>
+</div>
+
+<!-- Modal de Agregar Post -->
+<div *ngIf="isModalVisible" class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h2>Create a new post</h2>
+      <form (ngSubmit)="addPost()">
+        <label>Title:</label>
+        <input type="text" id="title" [(ngModel)]="newPost.title" name="title" required class="input rounded" placeholder="Enter a captivating title..." />
+        
+        <label>Description:</label>
+        <input type="text" id="description" [(ngModel)]="newPost.description" name="description" required class="input rounded" placeholder="Write a brief summary of your post..." />
+
+        <label>Content:</label  >
+        <textarea id="content" [(ngModel)]="newPost.content" name="content" required class="textarea rounded" placeholder="Start writing your content here..." ></textarea>
+        
+        <!-- <label for="image">Image (URL):</label>
+        <input type="text" id="image" [(ngModel)]="newPost.image" name="image" required  class="input rounded" placeholder="Paste an image URL (optional)..." /> -->
+
+        <div class="action-container">
+            <button type="submit" class="f-p btn primary-btn">Add</button>
+            <button type="button" (click)="closeModal()" class="f-p btn secondary-btn">Back</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Cuenta -->
+<div *ngIf="isModalAccountVisible" class="modal-overlay" (click)="closeModal2()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h2>My user account</h2>
+      <form (ngSubmit)="addPost()">
+        <label>Id:</label>
+        <input type="text" id="id" [(ngModel)]="myProfile.id" name="id" required class="input rounded" [disabled]="true" />
+        
+        <label>Name:</label>
+        <input type="text" id="name" [(ngModel)]="myProfile.name" name="name" required class="input rounded" [disabled]="true" />
+
+        <label>Email:</label  >
+        <input type="text" id="email" [(ngModel)]="myProfile.email" name="email" required class="input rounded" [disabled]="true" />
+        
+        <!-- <label>Avatar (URL):</label>
+        <input type="text" id="avatar" [(ngModel)]="myProfile.avatar" name="avatar" required  class="input rounded" placeholder="Paste an avatar URL (optional)..." [disabled]="true" /> -->
+
+        <div class="action-container">
+            <button type="submit" (click)="onLogOut()" class="f-p btn primary-btn">Log out</button>
+            <button type="button" (click)="closeModal2()" class="f-p btn secondary-btn">Back</button>
+        </div>
+        
+      </form>
+    </div>
+</div>

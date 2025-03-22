@@ -1,0 +1,108 @@
+<!-- POSTS VISUALIZER -->
+<app-bubble-back></app-bubble-back>
+
+
+<div class="container">
+
+    <div *ngFor="let card of datosCard | slice:0:1; trackBy: trackByFn" class="card-container" id="{{ card.post_id }}">
+        <img [src]="card.image" alt="Background" class="bg rounded">
+        <div class="content-container">
+            <h1 class="card-title">{{ card.title }}</h1>
+            <p class="card-description">{{ card.post_date }}</p>
+            <ul class="card-items">
+                <li><h3>{{ card.description }}</h3></li>
+                <li>{{ card.content }}</li>
+            </ul>
+            <hr class="sep">
+            <div class="action-container">
+                <div class="left-action">
+                    <!-- <button class="fa-regular fa-eye action-button card-button"   ></button> -->
+                    <!-- <label class="card-label">{{ card.view_count }}</label> -->
+                    <button class="fa-regular fa-comment action-button card-button"></button>
+                    <label class="card-label">{{ card.comment_count }}</label>
+                </div>
+                <div class="right-action">
+                    <button (click)="addLike(card)" [ngClass]="[(likesStatusMap.get(card.post_id) | async) ? 'fa-solid' : 'fa-regular', 'fa-heart', 'action-button', 'card-button']"></button>                     
+                    <label class="" >{{ card.like_count }}</label>
+                </div>
+            </div>
+            <div class="interaction-container">
+                <form (ngSubmit)="addComment(commentInput.value)">
+                    <input #commentInput id="comment" name="comment" type="text" class="input rounded" placeholder="Enter comment">
+                    <button type="submit" class="f-p btn primary-btn">
+                        <span>Send comment</span>
+                    </button>
+                </form>
+            </div>
+
+            <div *ngIf="datosComments.length > 0" class="comments-container">
+                <h3>Comments:</h3>
+                <ul class="card-items">
+                    <li *ngFor="let comment of datosComments">
+                        <strong>{{ comment.author_name }}</strong> - {{ comment.date | date:'short' }}<br>
+                        {{ comment.content }}
+                    </li>
+                </ul>                
+            </div>  
+
+        </div>   
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- POSTS VISUALIZER
+<div class="container">
+
+    <div *ngFor="let card of datos | slice:0:1; trackBy: trackByFn" class="card-container" id="{{ card.id }}">
+        <img [src]="card.image" alt="Background" class="bg rounded">
+        <div class="content-container">
+            <h1 class="card-title">{{ card.title }}</h1>
+            <p class="card-description">{{ card.date }}</p>
+            <ul class="card-items">
+                <li><h3>{{ card.description }}</h3></li>
+                <li>{{ card.content }}</li>
+            </ul>
+            <hr class="sep">
+            <div class="action-container">
+                <div class="left-action">
+                    <button class="fa-regular fa-eye action-button card-button" (click)="addView(card)"></button>
+                    <label class="card-label">{{ card.views.length }}</label>
+                    <button class="fa-regular fa-comment action-button card-button"></button>
+                    <label class="card-label">{{ card.comments.length }}</label>
+                </div>
+                <div class="right-action">
+                    <button (click)="addLike(card)" [ngClass]="[checkLikes(card) ? 'fa-solid' : 'fa-regular', 'fa-heart', 'action-button', 'card-button']" ></button>
+                    <label class="" (click)="addView(card)">{{ card.likes.length }}</label>
+                </div>
+            </div>
+            <div class="interaction-container">
+                <form (ngSubmit)="addComment(card, commentInput.value)">
+                    <input #commentInput id="comment" name="comment" type="text" class="input rounded" placeholder="Enter comment">
+                    <button type="submit" class="f-p btn primary-btn">
+                        <span>Send comment</span>
+                    </button>
+                </form>
+            </div>
+
+            <div *ngIf="card.comments.length > 0" class="comments-container">
+                <h3>Comments:</h3>
+                <ul class="card-items">
+                    <li *ngFor="let comment of card.comments">
+                        <strong>{{ comment.author.email }}</strong> - {{ comment.date | date:'short' }}<br>
+                        {{ comment.content }}
+                    </li>
+                </ul>
+
+                
+            </div>  
+        </div>   
+    </div>
+
+</div>
+
+ -->
