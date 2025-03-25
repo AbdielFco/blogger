@@ -2,7 +2,7 @@
 
 /* Establece la imagen de fondo */
 .background {
-    background-image: url('/images/fondos/bg.jpg'); /* Ruta absoluta desde la carpeta public */
+    background-image: url('images/fondos/bg.jpg'); /* Ruta relativa */
     background-size: cover;
     background-position: center;
     height: 90vh;
